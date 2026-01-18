@@ -58,19 +58,20 @@ export default function Location() {
   useEffect(() => {
     setIsClient(true);
     // Import Leaflet and create custom icon
-    import('leaflet').then((L) => {
-      // Import leaflet CSS
-      import('leaflet/dist/leaflet.css');
-      
-      const icon = new L.Icon({
-        iconUrl: '/images/logo.jpg',
-        iconSize: [50, 50],
-        iconAnchor: [25, 50],
-        popupAnchor: [0, -50],
-        className: 'rounded-full border-4 border-[#472055] shadow-lg'
-      });
-      setCustomIcon(icon);
-    });
+    import("leaflet").then((L) => {
+			// Import leaflet CSS
+			// @ts-ignore - CSS import doesn't have type declarations
+			import("leaflet/dist/leaflet.css");
+
+			const icon = new L.Icon({
+				iconUrl: "/images/logo.jpg",
+				iconSize: [50, 50],
+				iconAnchor: [25, 50],
+				popupAnchor: [0, -50],
+				className: "rounded-full border-4 border-[#472055] shadow-lg",
+			});
+			setCustomIcon(icon);
+		});
   }, []);
 
   return (

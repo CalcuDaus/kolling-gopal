@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 		"Kopi gerobak keliling berbasis sepeda listrik — ramah lingkungan & fresh brew. GO-PAL Kopi Keliling hadir di sekitarmu.",
 	keywords:
 		"kopi keliling, kolingopal, go-pal, kopi gerobak, sepeda listrik, kopi fresh",
+	icons: {
+		icon: "/images/logo.jpg",
+		apple: "/images/logo.jpg",
+	},
 	openGraph: {
 		title: "KolinGopal - Kopi Keliling",
 		description:
